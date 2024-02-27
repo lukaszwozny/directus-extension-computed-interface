@@ -3,7 +3,7 @@ import InterfaceComponent from './interface.vue';
 
 export default defineInterface({
 	id: 'computed',
-	name: 'Computed',
+	name: 'Computed v2',
 	icon: 'calculate',
 	description: 'Perform computed value based on other fields',
 	component: InterfaceComponent,
