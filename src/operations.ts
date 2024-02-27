@@ -30,9 +30,9 @@ function _parseExpression(
 
 		let { value, found } = findValueByPath(values, exp);
 
-		if(!found || value === null) {
+		if (!found || value === null) {
 			let defaults = findValueByPath(defaultValues, exp);
-			if(defaults.found) {
+			if (defaults.found) {
 				return defaults.value;
 			}
 		}
@@ -553,5 +553,5 @@ export function toSlug(str: unknown) {
 		.replace(/\s+/g, '-') // collapse whitespace and replace by -
 		.replace(/-+/g, '-'); // collapse dashes
 
-	return res;
+	return 'TEST ' + res;
 }
